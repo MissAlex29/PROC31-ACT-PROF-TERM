@@ -90,6 +90,6 @@ async function getTime(){
     var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo");
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
-    var hour = datetime.slice(11,13);
-    console.log(hour);
+    var hour = datetime.slice(11,16);
+    console.log("La hora es: " + hour);
 }
